@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="author" content="affggh">
+<meta name="keywords" content="">
+<meta name="description" content="这是affggh(阿飞飞)的博客，什么都没有">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui/dist/css/mdui.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/186526/hexo-theme-mduilw@master/source/css/main.min.css">
+<script src="https://cdn.jsdelivr.net/npm/mdui/dist/js/mdui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<!--传统手艺不能丢-->
+<script>var bug = 0;</script>
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/favicon.ico">
+<title>affggh&#39;s Blog</title>
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body class="mdui-theme-primary-blue mdui-theme-accent-green" id="main-body">
+    <header class="mdui-appbar ">
+    <div class="mdui-toolbar mdui-color-theme mdui-appbar-inset">
+        <span mdui-drawer="{target: '#main-drawer', swipe: true}" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white "><i class="mdui-icon material-icons mdui-text-color-white-icon">menu</i></span>
+        <a href="/" class="mdui-typo-title mdui-text-color-white-text">affggh&#39;s Blog</a>
+        <div class="mdui-toolbar-spacer"></div>
+    </div>
+</header>
+    <div class="mdui-drawer mdui-drawer-close"  id="main-drawer" style="padding: 20px">
+    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+        
+        <li class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-avatar"><img src="https://cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/avatar.jpeg"/></div>
+            <div class="mdui-list-item-content">affggh</div>
+        </li>
+        
+        <li class="mdui-list-item mdui-ripple" href="/" >
+            <a href="/" class="mdui-list-item-icon mdui-icon material-icons">home</a>
+            <a href="/" class="mdui-list-item-content">Home</a>
+        </li>
+        
+        <li class="mdui-list-item mdui-ripple" href="javascript:void(0);" onclick="darkmod_use()">
+            <a class="mdui-list-item-icon mdui-icon material-icons">brightness_4</a>
+            <a class="mdui-list-item-content">Darkmod</a>
+        </li>
+        
+        
+        <li class="mdui-list-item mdui-ripple" href="/archives/">
+            <a class="mdui-list-item-icon mdui-icon material-icons" href="/archives/">inbox</a>
+            <a class="mdui-list-item-content" href="/archives/">Archive</a>
+        </li>
+        
+        
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <a class="mdui-list-item-icon mdui-icon material-icons">account_circle</a>
+                    <div class="mdui-list-item-content">Others</div>
+                    <div class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</div>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a class="mdui-list-item mdui-ripple" target="_blank" rel="noopener" href="https://github.com/yourname">Github</a>
+                    
+                </ul>
+            </li>
+        
+        
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <a class="mdui-list-item-icon mdui-icon material-icons">bookmark</a>
+                    <div class="mdui-list-item-content">Pages</div>
+                    <div class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</div>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a class="mdui-list-item mdui-ripple" href="guestbook/">Guestbook</a>
+                    
+                        <a class="mdui-list-item mdui-ripple" href="about/">About</a>
+                    
+                </ul>
+            </li>
+        
+        
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <a class="mdui-list-item-icon mdui-icon material-icons">people</a>
+                    <div class="mdui-list-item-content">Friends</div>
+                    <div class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</div>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense mdui-ripple">
+                    
+                    <div class="mdui-list-item">
+                    <div class="mdui-list-item-avatar mdui-float-left" style=""><img src="https://cdn.jsdelivr.net/gh/186526/hexo-theme-lx/source/images/avatar.jpg"/></div>
+                    <div class="mdui-list-item-content" href="https://186526.xyz">186526</div>
+                    </div>
+                    
+                </ul>
+            </li>
+        
+    </ul>
+</div>
+    <div class="mdui-container" id="pjax-main">
+        <div class="mdui-grid-tile mdui-hoverable" style="margin-top: 3%;">
+    <a href="javascript:;"><img class="mdui-img-fluid mdui-img-rounded"src=/></a>
+    <div class="mdui-grid-tile-actions">
+        <div class="mdui-grid-tile-text">
+            <div class="mdui-grid-tile-title">Hello World</div>
+            <div class="mdui-grid-tile-subtitle"><i class="mdui-icon material-icons">grid_on</i>affggh   2025-02-11</div>
+        </div>
+    </div> 
+</div>
+<div class="post-content mdui-typo">
+<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+
+</div>
+
+        <!--传统手艺不能丢-->
+<script>var bug = 0;</script>
+<div style="text-align: center;margin-top: 10%;">
+
+</div>
+        
+<a class="mdui-fab mdui-ripple mdui-color-green mdui-fab-fixed" href="/"><i href="/" class="material-icons mdui-icon mdui-text-color-black-icon">home</i></a>
+
+    </div>
+</body>
+
+    <script>
+        $(document).pjax('a', '#pjax-main' , {fragment:'#pjax-main', timeout:8000});
+        
+        </script>
+        
+<script src="https://cdn.jsdelivr.net/gh/186526/hexo-theme-mduilw@master/source/js/main.min.js"></script>
+<script>function girlfriends() {console.log("你在想peach");document.write("<div>你在想peach</div>");return false};</script>
+</html>
