@@ -1,144 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: https://ogp.me/ns#" class="mdui-theme-dark" data-theme="dark">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="author" content="affggh">
-<meta name="keywords" content="">
-<meta name="description" content="这是affggh(阿飞飞)的博客，什么都没有">
-<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui/dist/css/mdui.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/186526/hexo-theme-mduilw@master/source/css/main.min.css">
-<script src="https://cdn.jsdelivr.net/npm/mdui/dist/js/mdui.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-<!--传统手艺不能丢-->
-<script>var bug = 0;</script>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/favicon.ico">
-<title>affggh&#39;s Blog</title>
-<meta name="generator" content="Hexo 7.3.0"></head>
-<body class="mdui-theme-primary-blue mdui-theme-accent-green" id="main-body">
-    <header class="mdui-appbar ">
-    <div class="mdui-toolbar mdui-color-theme mdui-appbar-inset">
-        <span mdui-drawer="{target: '#main-drawer', swipe: true}" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white "><i class="mdui-icon material-icons mdui-text-color-white-icon">menu</i></span>
-        <a href="/" class="mdui-typo-title mdui-text-color-white-text">affggh&#39;s Blog</a>
-        <div class="mdui-toolbar-spacer"></div>
-    </div>
-</header>
-    <div class="mdui-drawer mdui-drawer-close"  id="main-drawer" style="padding: 20px">
-    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="keywords" content="">
+  <meta name="description" content="这是affggh(阿飞飞)的博客，CircleCashTeam的Master">
+  <meta name="author" content="affggh">
+  <meta name="generator" content="Hexo 7.3.0">
+    <meta name="description" content="这是affggh(阿飞飞)的博客，CircleCashTeam的Master">
+<meta property="og:type" content="website">
+<meta property="og:title" content="affggh&#39;s Blog">
+<meta property="og:url" content="http://affggh.github.io/archives/index.html">
+<meta property="og:site_name" content="affggh&#39;s Blog">
+<meta property="og:description" content="这是affggh(阿飞飞)的博客，CircleCashTeam的Master">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="affggh">
+<meta name="twitter:card" content="summary">
+      <link rel="icon" href="">
+      <title>
         
-        <li class="mdui-list-item mdui-ripple">
-            <div class="mdui-list-item-avatar"><img src="https://cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/avatar.jpeg"/></div>
-            <div class="mdui-list-item-content">affggh</div>
-        </li>
+                affggh&#39;s Blog
+                  
+      </title>
+      
+<link rel="stylesheet" href="/css/site.css">
+
+      
+<link rel="stylesheet" href="/css/mdui_2.0.3/mdui.css">
+
+      <style>
+        /*禁用mdui对code的样式，因为它干扰了prism.js*/
+        .mdui-prose pre code {
+          background-color: transparent;
+          padding: 0px 0px;
+        }
+      </style>
+      
+<script src="/css/mdui_2.0.3/mdui.global.js"></script>
+
+      
+<script src="/fancybox/fancybox.umd.js"></script>
+
+      
+<link rel="stylesheet" href="/fancybox/fancybox.css">
+
+      
+<script src="/carousel/carousel.umd.js"></script>
+
+      
+<link rel="stylesheet" href="/carousel/carousel.css">
+
+      
+<link rel="stylesheet" href="/css/prism.css">
+
+          
+<link rel="stylesheet" href="/css/katex.min.css">
+
+            
+<link rel="stylesheet" href="/css/font-material-icon-filled/MaterialIconFilled.css">
+
+              <!-- Filled -->
+              <script>window.$=mdui.$</script>
+</head>
+
+  <body class="line-numbers">
+    <mdui-layout>
+      <mdui-top-app-bar>
+        <mdui-button-icon icon="menu" id="menu-btn">
+        </mdui-button-icon>
+        <mdui-top-app-bar-title>
+          affggh&#39;s Blog
+        </mdui-top-app-bar-title>
+        <div style="flex-grow: 1"></div>
         
-        <li class="mdui-list-item mdui-ripple" href="/" >
-            <a href="/" class="mdui-list-item-icon mdui-icon material-icons">home</a>
-            <a href="/" class="mdui-list-item-content">Home</a>
-        </li>
+      </mdui-top-app-bar>
+      <mdui-navigation-drawer close-on-overlay-click close-on-esc id="drawer">
+    <mdui-list>
         
-        <li class="mdui-list-item mdui-ripple" href="javascript:void(0);" onclick="darkmod_use()">
-            <a class="mdui-list-item-icon mdui-icon material-icons">brightness_4</a>
-            <a class="mdui-list-item-content">Darkmod</a>
-        </li>
-        
-        
-        <li class="mdui-list-item mdui-ripple" href="/archives/">
-            <a class="mdui-list-item-icon mdui-icon material-icons" href="/archives/">inbox</a>
-            <a class="mdui-list-item-content" href="/archives/">Archive</a>
-        </li>
-        
-        
-            <li class="mdui-collapse-item">
-                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                    <a class="mdui-list-item-icon mdui-icon material-icons">account_circle</a>
-                    <div class="mdui-list-item-content">Others</div>
-                    <div class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</div>
-                </div>
-                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-                    
-                        <a class="mdui-list-item mdui-ripple" target="_blank" rel="noopener" href="https://github.com/yourname">Github</a>
-                    
-                </ul>
-            </li>
-        
-        
-            <li class="mdui-collapse-item">
-                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                    <a class="mdui-list-item-icon mdui-icon material-icons">bookmark</a>
-                    <div class="mdui-list-item-content">Pages</div>
-                    <div class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</div>
-                </div>
-                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-                    
-                        <a class="mdui-list-item mdui-ripple" href="guestbook/">Guestbook</a>
-                    
-                        <a class="mdui-list-item mdui-ripple" href="about/">About</a>
-                    
-                </ul>
-            </li>
-        
-        
-            <li class="mdui-collapse-item">
-                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                    <a class="mdui-list-item-icon mdui-icon material-icons">people</a>
-                    <div class="mdui-list-item-content">Friends</div>
-                    <div class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</div>
-                </div>
-                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense mdui-ripple">
-                    
-                    <div class="mdui-list-item">
-                    <div class="mdui-list-item-avatar mdui-float-left" style=""><img src="https://cdn.jsdelivr.net/gh/186526/hexo-theme-lx/source/images/avatar.jpg"/></div>
-                    <div class="mdui-list-item-content" href="https://186526.xyz">186526</div>
-                    </div>
-                    
-                </ul>
-            </li>
-        
-    </ul>
+            
+            <mdui-list-item rounded icon="home"
+                href="/"
+                
+                
+                rel="next">
+                Home
+            </mdui-list-item>
+            
+            
+            
+            <mdui-list-item rounded icon="archive"
+                href="/archives"
+                active
+                
+                rel="next">
+                Archives
+            </mdui-list-item>
+            
+            
+            
+            <mdui-list-item rounded icon="info"
+                href="/about"
+                
+                
+                rel="next">
+                About
+            </mdui-list-item>
+            
+            
+    </mdui-list>
+</mdui-navigation-drawer>
+        <mdui-layout-main style="min-height: 800px;" id="main">
+          <div style="padding-left: 16px;padding-right: 16px;" id="content">
+            <div class="mdui-prose">
+  
+  <h1>归档</h1>
+  <script>
+    let title = document.getElementsByTagName('title')[0];
+    title.textContent="归档 - affggh&#39;s Blog"
+</script>
+  
+                    <span>1 篇文章 </span>
 </div>
-    <div class="mdui-container" id="pjax-main">
-        <div id="card_of_archive">
+<br>
+
+<mdui-card clickable variant="filled" href="/2025/02/11/hello-world/" 
+    style="width:100%;">
     
-        <div class="mdui-card mdui-hoverable" style="margin-top: 3%;">
-            <div class="mdui-card-header">
-                <img class="mdui-card-header-avatar" src="https://cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/avatar.jpeg"/>
-                <div class="mdui-card-header-title">affggh</div>
-                <div class="mdui-card-header-subtitle">Hexo-Theme-MDUI</div>
-            </div>
-            <div class="mdui-card-media">
-                <img src=""/>
-                <div class="mdui-card-media-covered">
-                    <div class="mdui-card-primary">
-                        <div class="mdui-card-primary-title">Hello World</div>
-                        <div class="mdui-card-primary-subtitle">2025-02-11</div>
-                    </div>
-                </div>
-            </div>
-            <div class="mdui-card-actions">
-                <a class="mdui-btn mdui-ripple mdui-float-right" href="/2025/02/11/hello-world/">Read<i class="mdui-icon material-icons">navigate_next</i></a>
-            </div>
-        </div>
-    
-</div>
-
-        <!--传统手艺不能丢-->
-<script>var bug = 0;</script>
-<div style="text-align: center;margin-top: 10%;">
-
-</div>
+    <div class="mdui-prose" style="padding: 16px;">
+        <h1 style="margin-bottom: 8px;">
+            Hello World
+        </h1>
+        <span class="post-date">
+            <mdui-icon name="date_range" style="vertical-align: text-bottom;font-size: 18px;"></mdui-icon>
+            2025-02-11 20:41:12 &nbsp; <mdui-icon name="update"
+                    style="vertical-align: text-bottom;font-size: 18px;"></mdui-icon>
+                2025-02-11 20:41:12
+        </span>
+        <br>
+        <span>分类 
+            </span>
+            
+                <span>| 标签 </span>
+                            
         
-<a class="mdui-fab mdui-ripple mdui-color-green mdui-fab-fixed" href="/"><i href="/" class="material-icons mdui-icon mdui-text-color-black-icon">home</i></a>
-
+                <p>
+                    
+                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...
+                                    
+                </p>
     </div>
-</body>
+</mdui-card>
 
-    <script>
-        $(document).pjax('a', '#pjax-main' , {fragment:'#pjax-main', timeout:8000});
-        
-        </script>
-        
-<script src="https://cdn.jsdelivr.net/gh/186526/hexo-theme-mduilw@master/source/js/main.min.js"></script>
-<script>function girlfriends() {console.log("你在想peach");document.write("<div>你在想peach</div>");return false};</script>
+
+              <br>
+              <span></span>
+          </div>
+        </mdui-layout-main>
+    </mdui-layout>
+    
+          <script>
+            mdui.setColorScheme('#4fd8eb');
+            const navigationDrawer = document.querySelector("#drawer");
+            const mainlayout = document.querySelector("#main");
+            const breakpointCondition = mdui.breakpoint();
+            if (breakpointCondition.up('sm')) {
+              if (localStorage.getItem('navigationDrawer') == null) {
+                if("true"=="true")localStorage.setItem('navigationDrawer', "true");
+              }
+              if("true"=="true")navigationDrawer.setAttribute("open", (localStorage.getItem('navigationDrawer') == "true" ? true : false))
+            }
+            const menuBtn = document.querySelector("#menu-btn");
+            menuBtn.addEventListener("click", () => {
+              navigationDrawer.open = !navigationDrawer.open;
+              if("true"=="true")localStorage.setItem('navigationDrawer', navigationDrawer.open.toString());
+            });
+            const searchBtn = document.querySelector("#search-dlg-btn");
+            searchBtn.addEventListener("click", () => {
+              document.querySelector("#search-dlg").open = true;
+            });
+          </script>
+          
+<script src="/js/prism.js"></script>
+
+  </body>
+
 </html>
